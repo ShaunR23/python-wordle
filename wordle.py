@@ -56,7 +56,7 @@ def wordle(chosen_word):
         print(f'{display(guess, chosen_word, available_letters)}')
         if guess == chosen_word:
             print("You guessed it!!")
-            
+            exit()
         attempts -= 1
         print(f"Remaining available letters:\n {' '.join(available_letters)}")
         print(f'You have {attempts} guesses left. \n')
